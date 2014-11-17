@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyparser.json());
 app.post('/getTemp', function (req,res) {
   var wunderUrl = 'http://api.wunderground.com/api/' +
-    process.env.WUNDERAPI +
+    '2f27d3d3a5447b99'+
     '/conditions/q/' +
     req.body.latitude +
     ',' + req.body.longitude +
