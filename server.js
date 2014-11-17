@@ -8,7 +8,7 @@ var bodyparser = require('body-parser');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyparser.json());
-app.post('/getTemp', function (req,res) {
+app.post('/', function (req,res) {
   var wunderUrl = 'http://api.wunderground.com/api/' +
     '2f27d3d3a5447b99'+
     '/conditions/q/' +
