@@ -16,6 +16,8 @@ app.post('/', function (req,res) {
     ',' + req.body.longitude +
     '.json';
 
+    console.log( req.body.latitude, req.body.longitude);
+
     request
     .get(wunderUrl)
     .end(function (err, wunderData) {
